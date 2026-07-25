@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const trustPoints = [
   { emoji: "🎁", text: "Audit offert sans engagement" },
-  { emoji: "⏱️", text: "Réponse en -24h" },
+  { emoji: "⏱️", text: "Réponse en 24h" },
   { emoji: "💰", text: "+ 1 000 000€ dépensés en publicité" },
 ];
 
