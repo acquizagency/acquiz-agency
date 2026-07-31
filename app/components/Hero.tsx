@@ -48,15 +48,14 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-display text-5xl font-bold leading-tight text-charcoal sm:text-6xl md:text-7xl"
         >
-          Nous nous occupons de votre{" "}
+          Des campagnes qui transforment votre budget pub en{" "}
           <span
             className="rounded-md bg-charcoal px-2 text-cream"
             style={{ boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
           >
-            acquisition de leads et clients
+            clients, pas en clics
           </span>
-          <br className="sm:hidden" />{" "}
-          de A à Z
+          .
         </motion.h1>
 
         <motion.p
