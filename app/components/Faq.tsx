@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Y a-t-il un engagement ou contrat longue durée ?",
-    a: "Engagement de 3 mois minimum. C'est le temps nécessaire pour que les algorithmes (Meta, Google) sortent de leur phase d'apprentissage et que les ajustements successifs révèlent le vrai potentiel de vos campagnes. En dessous de 3 mois, aucun résultat n'est représentatif.",
+    a: "Engagement de 3 mois minimum. C'est le temps nécessaire pour que les algorithmes publicitaires sortent de leur phase d'apprentissage et que les ajustements successifs révèlent le vrai potentiel de vos campagnes. En dessous de 3 mois, aucun résultat n'est représentatif.",
   },
   {
     q: "Combien de temps avant de voir des résultats ?",
