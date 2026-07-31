@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   const { prenom, email, telephone, site, budget, message } = await req.json();
 
-  if (!prenom || !email || !telephone || !site || !budget) {
+  if (!prenom || !email || !telephone || !site) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
 Email: ${email}
 Téléphone: ${telephone}
 Site / activité: ${site}
-Budget mensuel: ${budget}
+Budget mensuel: ${budget || "—"}
 Message: ${message || "—"}`;
 
   if (apiKey) {

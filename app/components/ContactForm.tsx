@@ -108,10 +108,9 @@ export default function ContactForm() {
 
               <div>
                 <label className="mb-1.5 block font-body text-sm font-medium text-charcoal">
-                  Budget pub mensuel *
+                  Budget pub mensuel
                 </label>
                 <select
-                  required
                   name="budget"
                   defaultValue=""
                   className="w-full rounded-xl border border-charcoal/15 bg-cream px-4 py-3 font-body text-charcoal outline-none focus:border-charcoal/40"
