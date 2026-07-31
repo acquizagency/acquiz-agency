@@ -48,7 +48,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-display text-5xl font-bold leading-tight text-charcoal sm:text-6xl md:text-7xl"
         >
-          Des campagnes qui transforment votre budget pub en{" "}
+          Transformez votre budget pub en{" "}
           <span
             className="rounded-md bg-charcoal px-2 text-cream"
             style={{ boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}
