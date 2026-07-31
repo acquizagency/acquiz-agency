@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const { prenom, email, site, budget, message } = await req.json();
+  const { prenom, email, telephone, site, budget, message } = await req.json();
 
-  if (!prenom || !email || !site || !budget) {
+  if (!prenom || !email || !telephone || !site || !budget) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
@@ -11,6 +11,7 @@ export async function POST(req: NextRequest) {
 
   const body = `Prénom: ${prenom}
 Email: ${email}
+Téléphone: ${telephone}
 Site / activité: ${site}
 Budget mensuel: ${budget}
 Message: ${message || "—"}`;
@@ -35,7 +36,7 @@ Message: ${message || "—"}`;
       return NextResponse.json({ error: "Email send failed" }, { status: 500 });
     }
   } else {
-    console.log("New lead:", { prenom, email, site, budget, message });
+    console.log("New lead:", { prenom, email, telephone, site, budget, message });
   }
 
   return NextResponse.json({ ok: true });

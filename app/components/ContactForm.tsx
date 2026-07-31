@@ -83,6 +83,19 @@ export default function ContactForm() {
 
               <div>
                 <label className="mb-1.5 block font-body text-sm font-medium text-charcoal">
+                  Téléphone *
+                </label>
+                <input
+                  required
+                  type="tel"
+                  name="telephone"
+                  placeholder="06 12 34 56 78"
+                  className="w-full rounded-xl border border-charcoal/15 bg-cream px-4 py-3 font-body text-charcoal outline-none focus:border-charcoal/40"
+                />
+              </div>
+
+              <div>
+                <label className="mb-1.5 block font-body text-sm font-medium text-charcoal">
                   Site web ou activité *
                 </label>
                 <input
