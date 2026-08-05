@@ -169,6 +169,14 @@ export default function ContactForm() {
           <a href="tel:+33767817910" className="hover:text-charcoal">
             📞 +33 7 67 81 79 10
           </a>
+          <a
+            href="https://www.malt.fr/profile/amindasilva"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-charcoal"
+          >
+            🔗 Profil Malt
+          </a>
         </div>
       </FadeIn>
     </section>
