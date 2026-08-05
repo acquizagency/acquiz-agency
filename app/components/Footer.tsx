@@ -15,7 +15,7 @@ export default function Footer() {
           className="h-6 w-auto"
         />
         <p className="font-body text-sm text-cream/60">
-          © 2025 Acquiz — SIRET 94462089700016
+          © 2026 Acquiz — SIRET 94462089700016
         </p>
         <div className="flex gap-6 font-body text-sm text-cream/60">
           <Link href="/mentions-legales" className="hover:text-cream">
