@@ -31,7 +31,8 @@ const services: Service[] = [
     platform: "TikTok Ads",
     sub: "Social Ads",
     desc: "Créas vidéos virales, hooks efficaces, ciblage précis. CPM parmi les plus bas du marché.",
-    logo: "/platform-logos/tiktok.png",
+    logo: "/platform-logos/tiktok-white.png",
+    badgeClassName: "bg-black",
   },
   {
     platform: "LinkedIn Ads",
