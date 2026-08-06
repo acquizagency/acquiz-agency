@@ -10,6 +10,7 @@ type Service = {
   desc: string;
   logo?: string;
   fullBleedLogo?: boolean;
+  badgeClassName?: string;
   Icon?: IconComponent;
 };
 
@@ -44,6 +45,7 @@ const services: Service[] = [
     sub: "Social Ads",
     desc: "Formats immersifs et créas vidéos natives, pour toucher une audience jeune et mobile. Coûts d'acquisition souvent très compétitifs.",
     logo: "/platform-logos/snapchat.png",
+    badgeClassName: "bg-[#FFFC00]",
   },
   {
     platform: "Landing Page",
@@ -66,12 +68,12 @@ export default function Services() {
       </FadeIn>
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2">
-        {services.map(({ platform, sub, desc, logo, fullBleedLogo, Icon }, i) => (
+        {services.map(({ platform, sub, desc, logo, fullBleedLogo, badgeClassName, Icon }, i) => (
           <FadeIn key={platform} delay={i * 0.1}>
             <div className="h-full rounded-2xl border border-charcoal/10 bg-white/50 p-8">
               <span
                 className={`flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl ${
-                  logo ? (fullBleedLogo ? "" : "bg-white") : "bg-charcoal text-cream"
+                  badgeClassName ?? (logo ? (fullBleedLogo ? "" : "bg-white") : "bg-charcoal text-cream")
                 }`}
               >
                 {logo ? (
