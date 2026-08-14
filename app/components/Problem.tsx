@@ -4,7 +4,7 @@ import FadeIn from "./FadeIn";
 
 const problems = [
   "Vous avez lancé des pubs mais les résultats ne suivent pas",
-  "Votre budget pub part dans des clics qui n'achètent rien",
+  "Votre budget pub part dans des clics qui ne convertissent pas",
   "Vous ne savez pas vraiment ce qui fonctionne ou non dans vos campagnes",
   "Vous cherchez un moyen de vendre ou d'obtenir des rendez-vous mais vous ne savez pas quoi mettre en place",
 ];
