@@ -39,7 +39,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-6 rounded-full border border-charcoal/20 px-5 py-2 font-body text-base text-charcoal/70"
         >
-          Agence experte en acquisition Digitale
+          Agence experte en publicité en ligne Lead Gen &amp; e-commerce
         </motion.span>
 
         <motion.h1
