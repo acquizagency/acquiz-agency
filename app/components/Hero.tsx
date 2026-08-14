@@ -64,9 +64,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 max-w-2xl font-body text-lg text-charcoal/70"
         >
-          Déléguez votre partie digitale à un expert recommandé par les plus
-          grandes entreprises en France. Restez enfin concentré sur le cœur
-          de votre business.
+          Déléguez votre acquisition digitale à un expert recommandé par les
+          plus grands acteurs B2B &amp; B2C en France. Concentrez vous enfin
+          sur le cœur de votre business.
         </motion.p>
 
         <motion.a
