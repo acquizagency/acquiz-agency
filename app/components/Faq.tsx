@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "Vous travaillez avec quel type de clients ?",
-    a: "E-commerçants et entreprises en lead generation — TPE, PME, entrepreneurs qui veulent des résultats mesurables sans passer par une grosse agence impersonnelle.",
+    a: "E-commerçants, infopreneurs et entreprises recherchant des leads qualifiés : structures qui cherchent à obtenir des résultats concrets et mesurables sans passer par une agence impersonnelle.",
   },
 ];
 
