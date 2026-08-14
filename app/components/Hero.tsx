@@ -76,7 +76,7 @@ export default function Hero() {
           href="#contact"
           className="group mt-10 inline-flex items-center gap-2 rounded-full bg-charcoal px-8 py-4 font-body font-semibold text-cream transition-transform hover:scale-[1.03]"
         >
-          Je veux un audit gratuit
+          Je veux un audit gratuit &amp; rapide
           <span className="transition-transform group-hover:translate-x-1">→</span>
         </motion.a>
 
