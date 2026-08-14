@@ -5,6 +5,7 @@ import LogoBar from "./components/LogoBar";
 import Problem from "./components/Problem";
 import Stats from "./components/Stats";
 import Services from "./components/Services";
+import WhyUs from "./components/WhyUs";
 import CtaMid from "./components/CtaMid";
 import Process from "./components/Process";
 import Faq from "./components/Faq";
@@ -19,6 +20,7 @@ export default function Home() {
       <Problem />
       <Stats />
       <Services />
+      <WhyUs />
       <CtaMid />
       <Process />
       <Faq />
