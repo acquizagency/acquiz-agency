@@ -28,7 +28,7 @@ const reasons = [
 
 export default function WhyUs() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-24">
+    <section className="mx-auto max-w-6xl px-6 pb-24 pt-8">
       <FadeIn>
         <p className="text-center font-body text-sm uppercase tracking-wider text-charcoal/50">
           Notre différence
