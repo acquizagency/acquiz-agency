@@ -6,7 +6,7 @@ import { PinIcon, TrophyIcon, CertificateIcon, LightningIcon } from "./WhyUsIcon
 const reasons = [
   {
     title: "Expérience terrain concrète",
-    desc: "Une expertise forgée en agence média parisienne, au contact quotidien de vraies campagnes et de vrais budgets.",
+    desc: "Une expertise débutée en agence média parisienne puis forgée par la suite au contact des clients en direct.",
     Icon: PinIcon,
   },
   {
@@ -21,7 +21,7 @@ const reasons = [
   },
   {
     title: "Process structurés et modernes",
-    desc: "Une veille permanente sur les nouvelles méthodes et outils, quand la plupart des agences travaillent encore à l'ancienne.",
+    desc: "Veille et formation permanente sur les nouvelles méthodes et outils du secteur numérique, quand la plupart des agences travaillent encore “à l'ancienne”.",
     Icon: LightningIcon,
   },
 ];
