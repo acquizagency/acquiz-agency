@@ -5,18 +5,18 @@ import FadeIn from "./FadeIn";
 const steps = [
   {
     n: "01",
-    title: "Audit gratuit",
+    title: "Audit gratuit sous 24h",
     desc: "Nous analysons vos comptes, votre tracking, votre page d'atterissage et vos résultats actuels.",
   },
   {
     n: "02",
     title: "Stratégie sur-mesure",
-    desc: "Nous vous présentons un plan clair : plateformes, landing page, budget, créatifs, objectifs.",
+    desc: "Nous vous présentons un plan clair avec une méthode inédite et à jour avec les algorithmes : plateformes, landing page, budget, créatifs, objectifs.",
   },
   {
     n: "03",
     title: "Lancement & optimisation",
-    desc: "Nous pilotons tout, vous voyez les résultats évoluer chaque mois.",
+    desc: "Nous pilotons tout de A à Z, vous voyez les résultats évoluer chaque semaine.",
   },
 ];
 
