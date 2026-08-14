@@ -37,7 +37,7 @@ const services: Service[] = [
   {
     platform: "LinkedIn Ads",
     sub: "Social Ads",
-    desc: "Sponsored Content, Lead Gen Forms. Pour toucher les décideurs B2B avec le bon message.",
+    desc: "Sponsored Content, Lead Gen Forms. Idéal pour toucher les bons décideurs B2B avec un message impactant.",
     logo: "/platform-logos/linkedin.png",
     fullBleedLogo: true,
   },
