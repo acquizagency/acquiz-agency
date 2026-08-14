@@ -51,7 +51,7 @@ const services: Service[] = [
   {
     platform: "Landing Page",
     sub: "CRO",
-    desc: "Nous concevons et développons des pages optimisées pour transformer vos visiteurs en leads ou clients : message clair, un seul objectif, chargement rapide.",
+    desc: "Nous concevons et développons des pages optimisées grâce à une nouvelle méthode unique pour transformer vos visiteurs en leads ou clients : message clair, un seul objectif, chargement rapide. Livraison en 72h.",
     Icon: LandingPageIcon,
   },
 ];
