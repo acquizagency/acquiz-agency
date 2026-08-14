@@ -5,12 +5,12 @@ import { PinIcon, TrophyIcon, CertificateIcon, LightningIcon } from "./WhyUsIcon
 
 const reasons = [
   {
-    title: "Expérience terrain à Paris",
+    title: "Expérience terrain concrète",
     desc: "Une expertise forgée en agence média parisienne, au contact quotidien de vraies campagnes et de vrais budgets.",
     Icon: PinIcon,
   },
   {
-    title: "Habitués aux gros comptes",
+    title: "Habitués aux gros et petits comptes",
     desc: "Une expérience confirmée sur des comptes exigeants, avec la rigueur et les standards que ça impose.",
     Icon: TrophyIcon,
   },
@@ -20,7 +20,7 @@ const reasons = [
     Icon: CertificateIcon,
   },
   {
-    title: "Toujours à la pointe",
+    title: "Process structurés et modernes",
     desc: "Une veille permanente sur les nouvelles méthodes et outils, quand la plupart des agences travaillent encore à l'ancienne.",
     Icon: LightningIcon,
   },
@@ -31,10 +31,10 @@ export default function WhyUs() {
     <section className="mx-auto max-w-6xl px-6 pb-24 pt-8">
       <FadeIn>
         <p className="text-center font-body text-sm uppercase tracking-wider text-charcoal/50">
-          Notre différence
+          Notre différence vis-à-vis des autres
         </p>
         <h2 className="mt-4 text-center font-display text-3xl font-bold text-charcoal sm:text-4xl">
-          Pourquoi travailler avec nous ?
+          Pourquoi collaborer avec nous ?
         </h2>
       </FadeIn>
 
