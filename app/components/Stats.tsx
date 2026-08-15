@@ -7,7 +7,7 @@ import FadeIn from "./FadeIn";
 const stats = [
   { value: 1000000, prefix: "+", suffix: "€", label: "dépensés sur les plateformes publicitaires" },
   { value: 600000, prefix: "+", suffix: "€", label: "de CA générés pour nos clients" },
-  { value: 2.6, prefix: "", suffix: "", decimals: 1, label: "ROAS moyen obtenu sur nos clients" },
+  { value: 2.9, prefix: "", suffix: "", decimals: 1, label: "ROAS moyen obtenu sur nos clients" },
   { value: 98, prefix: "", suffix: "%", label: "clients satisfaits" },
 ];
 
