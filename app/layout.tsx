@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   title: "Acquiz Agency — Publicité en ligne qui génère de vrais résultats",
   description:
     "Consultant freelance en acquisition digitale : Meta Ads, Google Ads, TikTok Ads, LinkedIn Ads. Audit gratuit et sans engagement.",
-  robots: "noindex, nofollow",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
