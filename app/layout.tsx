@@ -18,9 +18,9 @@ const inter = Inter({
 const GTM_ID = "GTM-MPMVHDMM";
 
 export const metadata: Metadata = {
-  title: "Acquiz Agency — Publicité en ligne qui génère de vrais résultats",
+  title: "Acquiz Agency — Agence d'Acquisition en Publicité en Ligne",
   description:
-    "Consultant freelance en acquisition digitale : Meta Ads, Google Ads, TikTok Ads, LinkedIn Ads. Audit gratuit et sans engagement.",
+    "Expert en Acquisition Digitale - Plus de 30 clients accompagnés. Confiez votre acquisition de leads / génération de ventes en ligne à un expert confirmé et certifié par les principales régies publicitaires.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
