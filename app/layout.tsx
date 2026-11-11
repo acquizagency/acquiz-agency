@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Onest, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { OG_IMAGE } from "./lib/seo";
+import { SITE_NAME, SITE_URL } from "./lib/site";
 
 const onest = Onest({
   subsets: ["latin"],
@@ -17,10 +19,28 @@ const inter = Inter({
 
 const GTM_ID = "GTM-MPMVHDMM";
 
+const TITLE = "Acquiz Agency — Agence d'Acquisition en Publicité en Ligne";
+const DESCRIPTION =
+  "Expert en Acquisition Digitale - Plus de 30 clients accompagnés. Confiez votre acquisition de leads / génération de ventes en ligne à un expert confirmé et certifié par les principales régies publicitaires.";
+
 export const metadata: Metadata = {
-  title: "Acquiz Agency — Agence d'Acquisition en Publicité en Ligne",
-  description:
-    "Expert en Acquisition Digitale - Plus de 30 clients accompagnés. Confiez votre acquisition de leads / génération de ventes en ligne à un expert confirmé et certifié par les principales régies publicitaires.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: SITE_NAME,
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [OG_IMAGE.url],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
