@@ -6,7 +6,7 @@ import FadeIn from "./FadeIn";
 
 const stats = [
   { value: 1000000, prefix: "+", suffix: "€", label: "dépensés sur les plateformes publicitaires" },
-  { value: 600000, prefix: "+", suffix: "€", label: "de CA générés pour nos clients" },
+  { value: 1.2, prefix: "+", suffix: " million d'€", decimals: 1, smallSuffix: true, label: "de CA générés pour nos clients" },
   { value: 2.9, prefix: "", suffix: "", decimals: 1, label: "ROAS moyen obtenu sur nos clients" },
   { value: 98, prefix: "", suffix: "%", label: "clients satisfaits" },
 ];
@@ -16,11 +16,13 @@ function Counter({
   prefix,
   suffix,
   decimals = 0,
+  smallSuffix = false,
 }: {
   value: number;
   prefix: string;
   suffix: string;
   decimals?: number;
+  smallSuffix?: boolean;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
@@ -46,10 +48,10 @@ function Counter({
   });
 
   return (
-    <span ref={ref} className="font-display text-4xl font-bold text-charcoal sm:text-5xl">
+    <span ref={ref} className="whitespace-nowrap font-display text-4xl font-bold text-charcoal sm:text-5xl">
       {prefix}
       {formatted}
-      {suffix}
+      {smallSuffix ? <span className="text-xl sm:text-2xl">{suffix}</span> : suffix}
     </span>
   );
 }
@@ -64,7 +66,7 @@ export default function Stats() {
           </h2>
         </FadeIn>
 
-        <div className="mt-14 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4">
+        <div className="mt-14 grid grid-cols-1 gap-10 sm:grid-cols-2 xl:grid-cols-4">
           {stats.map((stat, i) => (
             <FadeIn key={stat.label} delay={i * 0.1}>
               <div className="text-center">
@@ -73,6 +75,7 @@ export default function Stats() {
                   prefix={stat.prefix}
                   suffix={stat.suffix}
                   decimals={"decimals" in stat ? stat.decimals : 0}
+                  smallSuffix={"smallSuffix" in stat ? stat.smallSuffix : false}
                 />
                 <p className="mt-2 font-body text-sm text-charcoal/60">{stat.label}</p>
               </div>
