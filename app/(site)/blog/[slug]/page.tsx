@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -24,6 +25,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     path: `/blog/${p.slug}`,
     type: "article",
     publishedTime: p.date,
+    image: { url: p.image.src, width: p.image.width, height: p.image.height, alt: p.image.alt },
   });
 }
 
@@ -48,7 +50,20 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     dateModified: p.date,
     inLanguage: "fr-FR",
     mainEntityOfPage: absoluteUrl(path),
-    image: absoluteUrl("/og-image.png"),
+    image: [
+      {
+        "@type": "ImageObject",
+        url: absoluteUrl(p.image.src),
+        width: p.image.width,
+        height: p.image.height,
+        caption: p.image.alt,
+      },
+      ...p.content.flatMap((b) =>
+        b.type === "img"
+          ? [{ "@type": "ImageObject", url: absoluteUrl(b.src), width: b.width, height: b.height, caption: b.alt }]
+          : [],
+      ),
+    ],
     author: { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/") },
     publisher: {
       "@type": "Organization",
@@ -70,6 +85,16 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         {p.title}
       </h1>
 
+      <Image
+        src={p.image.src}
+        alt={p.image.alt}
+        width={p.image.width}
+        height={p.image.height}
+        priority
+        sizes="(max-width: 768px) 100vw, 768px"
+        className="mt-8 h-auto w-full rounded-2xl border border-charcoal/10"
+      />
+
       <div className="mt-8 space-y-5 font-body text-lg leading-relaxed text-charcoal/80">
         {p.content.map((b, i) => {
           if (b.type === "h2")
@@ -88,6 +113,25 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                   </li>
                 ))}
               </ul>
+            );
+          if (b.type === "img")
+            return (
+              <figure key={i} className="my-8">
+                <Image
+                  src={b.src}
+                  alt={b.alt}
+                  width={b.width}
+                  height={b.height}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="h-auto w-full rounded-2xl border border-charcoal/10"
+                />
+                {b.caption && (
+                  <figcaption className="mt-3 text-center font-body text-sm text-charcoal/60">
+                    {b.caption}
+                  </figcaption>
+                )}
+              </figure>
             );
           return <p key={i}>{b.text}</p>;
         })}

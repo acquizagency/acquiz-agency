@@ -14,6 +14,7 @@ type BuildMetadataInput = {
   path: string;
   type?: "website" | "article";
   publishedTime?: string;
+  image?: { url: string; width: number; height: number; alt: string };
 };
 
 export function buildMetadata({
@@ -22,6 +23,7 @@ export function buildMetadata({
   path,
   type = "website",
   publishedTime,
+  image = OG_IMAGE,
 }: BuildMetadataInput): Metadata {
   return {
     title,
@@ -34,14 +36,14 @@ export function buildMetadata({
       title,
       description,
       url: path,
-      images: [OG_IMAGE],
+      images: [image],
       ...(publishedTime ? { publishedTime } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [OG_IMAGE.url],
+      images: [image.url],
     },
   };
 }

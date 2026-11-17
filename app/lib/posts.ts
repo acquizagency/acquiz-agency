@@ -1,7 +1,16 @@
+export type PostImage = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  caption?: string;
+};
+
 export type PostBlock =
   | { type: "h2"; text: string }
   | { type: "p"; text: string }
-  | { type: "ul"; items: string[] };
+  | { type: "ul"; items: string[] }
+  | ({ type: "img" } & PostImage);
 
 export type Post = {
   slug: string;
@@ -9,6 +18,7 @@ export type Post = {
   description: string;
   date: string; // ISO yyyy-mm-dd
   readingMinutes: number;
+  image: PostImage;
   relatedServices: string[];
   content: PostBlock[];
 };
@@ -21,6 +31,12 @@ export const posts: Post[] = [
       "Définition, formule et exemples : découvrez comment calculer votre ROAS, le comparer à votre marge et fixer un objectif réaliste pour vos campagnes.",
     date: "2026-11-11",
     readingMinutes: 5,
+    image: {
+      src: "/blog/roas-calcul-objectif.png",
+      alt: "Visuel de l'article sur le calcul du ROAS et l'objectif à viser en publicité en ligne",
+      width: 1200,
+      height: 630,
+    },
     relatedServices: ["meta-ads", "google-ads", "landing-page-cro"],
     content: [
       {
@@ -40,6 +56,14 @@ export const posts: Post[] = [
       {
         type: "p",
         text: "Exemple : vous dépensez 1 000 € en publicité et vos campagnes génèrent 3 000 € de chiffre d'affaires. Votre ROAS est de 3 (ou 300 %) : chaque euro investi en rapporte trois.",
+      },
+      {
+        type: "img",
+        src: "/blog/formule-roas.png",
+        alt: "Schéma de la formule du ROAS : le chiffre d'affaires généré par la publicité divisé par les dépenses publicitaires. Exemple : 3 000 € de ventes pour 1 000 € dépensés donnent un ROAS de 3.",
+        caption: "La formule du ROAS, avec un exemple chiffré.",
+        width: 1200,
+        height: 420,
       },
       { type: "h2", text: "ROAS et rentabilité : ne pas les confondre" },
       {
@@ -100,11 +124,25 @@ export const posts: Post[] = [
       "Google capte la demande existante, Meta la crée. Comparez les deux plateformes et choisissez celle qui convient à votre activité et à votre budget.",
     date: "2026-11-11",
     readingMinutes: 4,
+    image: {
+      src: "/blog/meta-ads-ou-google-ads.png",
+      alt: "Visuel de l'article comparant Meta Ads et Google Ads pour choisir par où commencer",
+      width: 1200,
+      height: 630,
+    },
     relatedServices: ["meta-ads", "google-ads"],
     content: [
       {
         type: "p",
         text: "Vous avez un budget publicitaire à investir et une seule question : Meta Ads ou Google Ads ? La réponse tient en une idée : Google capte une demande qui existe déjà, Meta crée l'envie chez des personnes qui ne cherchaient rien.",
+      },
+      {
+        type: "img",
+        src: "/blog/google-ads-vs-meta-ads.png",
+        alt: "Comparatif Google Ads et Meta Ads : Google capte une intention d'achat auprès d'internautes qui cherchent activement, Meta crée la demande auprès d'utilisateurs qui font défiler leur fil.",
+        caption: "Google Ads capte la demande existante, Meta Ads la crée.",
+        width: 1200,
+        height: 470,
       },
       { type: "h2", text: "Google Ads : capter une intention d'achat" },
       {
@@ -153,6 +191,12 @@ export const posts: Post[] = [
       "Message clair, preuve sociale, formulaire court, vitesse : les 7 éléments d'une landing page qui transforme vos visiteurs en leads ou en clients.",
     date: "2026-11-11",
     readingMinutes: 4,
+    image: {
+      src: "/blog/landing-page-7-elements-conversion.png",
+      alt: "Visuel de l'article sur les 7 éléments d'une landing page qui convertit",
+      width: 1200,
+      height: 630,
+    },
     relatedServices: ["landing-page-cro", "meta-ads"],
     content: [
       {
@@ -212,6 +256,12 @@ export const posts: Post[] = [
       "Forfait, pourcentage du budget ou mixte : comprenez comment les agences facturent Meta Ads et Google Ads, et ce qu'il faut vérifier avant de signer.",
     date: "2026-11-17",
     readingMinutes: 5,
+    image: {
+      src: "/blog/cout-agence-publicite-en-ligne.png",
+      alt: "Visuel de l'article sur le coût d'une agence de publicité en ligne et ses modèles de tarification",
+      width: 1200,
+      height: 630,
+    },
     relatedServices: ["meta-ads", "google-ads"],
     content: [
       {
@@ -231,6 +281,14 @@ export const posts: Post[] = [
           "Le pourcentage du budget média : les honoraires évoluent avec vos dépenses publicitaires. L'agence est incitée à faire croître le budget, ce qui n'est pas toujours aligné avec votre rentabilité.",
           "Le modèle mixte : un fixe réduit complété d'une part variable, parfois liée à des objectifs de performance. Il aligne les intérêts, à condition que les objectifs soient mesurables et définis à l'avance.",
         ],
+      },
+      {
+        type: "img",
+        src: "/blog/modeles-tarification-agence.png",
+        alt: "Schéma des trois modèles de tarification d'une agence : forfait fixe, pourcentage du budget média et modèle mixte, avec leurs avantages et leurs limites.",
+        caption: "Forfait fixe, pourcentage du budget ou modèle mixte : avantages et limites.",
+        width: 1200,
+        height: 480,
       },
       { type: "h2", text: "Ce qui fait varier le prix" },
       {
@@ -278,6 +336,12 @@ export const posts: Post[] = [
       "Freelance, agence ou expert indépendant : avantages, limites et questions à poser pour choisir qui pilotera vos campagnes Meta Ads et Google Ads.",
     date: "2026-11-17",
     readingMinutes: 5,
+    image: {
+      src: "/blog/agence-ou-freelance-publicite-en-ligne.png",
+      alt: "Visuel de l'article pour choisir entre une agence et un freelance en publicité en ligne",
+      width: 1200,
+      height: 630,
+    },
     relatedServices: ["meta-ads", "google-ads", "landing-page-cro"],
     content: [
       {
@@ -340,6 +404,12 @@ export const posts: Post[] = [
       "Pixel, API de conversions, déduplication et consentement : les bases d'un suivi fiable pour que Meta optimise vos campagnes sur de vraies conversions.",
     date: "2026-11-17",
     readingMinutes: 6,
+    image: {
+      src: "/blog/pixel-meta-api-conversions-tracking.png",
+      alt: "Visuel de l'article sur le Pixel Meta et l'API de conversions pour un tracking fiable",
+      width: 1200,
+      height: 630,
+    },
     relatedServices: ["meta-ads", "google-ads", "landing-page-cro"],
     content: [
       {
@@ -360,6 +430,14 @@ export const posts: Post[] = [
       {
         type: "p",
         text: "Quand le Pixel et l'API envoient le même événement, Meta doit comprendre qu'il s'agit d'une seule conversion. Pour cela, chaque événement doit porter le même nom et le même identifiant d'événement (event_id) des deux côtés. Sans déduplication, vos conversions sont gonflées et vos chiffres ne sont plus fiables.",
+      },
+      {
+        type: "img",
+        src: "/blog/pixel-api-conversions-deduplication.png",
+        alt: "Schéma du suivi Meta : le visiteur déclenche un événement envoyé à la fois par le Pixel Meta (navigateur) et par l'API de conversions (serveur), puis Meta les déduplique grâce à un event_id commun pour ne compter qu'une conversion.",
+        caption: "Le Pixel et l'API envoient le même événement : la déduplication évite le double comptage.",
+        width: 1200,
+        height: 480,
       },
       { type: "h2", text: "Le consentement et le RGPD" },
       {
