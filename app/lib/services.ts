@@ -77,7 +77,7 @@ export const services: ServicePageData[] = [
       },
     ],
     relatedServices: ["google-ads", "landing-page-cro"],
-    relatedPosts: ["roas-calcul-objectif", "meta-ads-ou-google-ads"],
+    relatedPosts: ["pixel-meta-api-conversions-tracking", "meta-ads-ou-google-ads", "cout-agence-publicite-en-ligne"],
   },
   {
     slug: "google-ads",
@@ -135,7 +135,7 @@ export const services: ServicePageData[] = [
       },
     ],
     relatedServices: ["meta-ads", "landing-page-cro"],
-    relatedPosts: ["meta-ads-ou-google-ads", "roas-calcul-objectif"],
+    relatedPosts: ["meta-ads-ou-google-ads", "cout-agence-publicite-en-ligne", "agence-ou-freelance-publicite-en-ligne"],
   },
   {
     slug: "tiktok-ads",
@@ -191,7 +191,7 @@ export const services: ServicePageData[] = [
       },
     ],
     relatedServices: ["snap-ads", "meta-ads"],
-    relatedPosts: ["roas-calcul-objectif"],
+    relatedPosts: ["roas-calcul-objectif", "cout-agence-publicite-en-ligne"],
   },
   {
     slug: "linkedin-ads",
@@ -246,7 +246,7 @@ export const services: ServicePageData[] = [
       },
     ],
     relatedServices: ["google-ads", "landing-page-cro"],
-    relatedPosts: ["landing-page-7-elements-conversion"],
+    relatedPosts: ["landing-page-7-elements-conversion", "agence-ou-freelance-publicite-en-ligne"],
   },
   {
     slug: "snap-ads",
@@ -301,7 +301,7 @@ export const services: ServicePageData[] = [
       },
     ],
     relatedServices: ["tiktok-ads", "meta-ads"],
-    relatedPosts: ["roas-calcul-objectif"],
+    relatedPosts: ["roas-calcul-objectif", "cout-agence-publicite-en-ligne"],
   },
   {
     slug: "landing-page-cro",
@@ -359,7 +359,7 @@ export const services: ServicePageData[] = [
       },
     ],
     relatedServices: ["meta-ads", "google-ads"],
-    relatedPosts: ["landing-page-7-elements-conversion", "roas-calcul-objectif"],
+    relatedPosts: ["landing-page-7-elements-conversion", "pixel-meta-api-conversions-tracking", "roas-calcul-objectif"],
   },
 ];
 

@@ -205,6 +205,202 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "cout-agence-publicite-en-ligne",
+    title: "Combien coûte une agence de publicité en ligne ?",
+    description:
+      "Forfait, pourcentage du budget ou mixte : comprenez comment les agences facturent Meta Ads et Google Ads, et ce qu'il faut vérifier avant de signer.",
+    date: "2026-11-17",
+    readingMinutes: 5,
+    relatedServices: ["meta-ads", "google-ads"],
+    content: [
+      {
+        type: "p",
+        text: "« Combien ça coûte ? » est la première question que se pose toute entreprise qui veut déléguer sa publicité en ligne. La réponse dépend moins d'un tarif unique que de la façon dont l'agence facture. Voici les modèles les plus courants, ce qui fait varier le prix et les points à vérifier avant de s'engager.",
+      },
+      { type: "h2", text: "Deux budgets à ne pas confondre" },
+      {
+        type: "p",
+        text: "Le budget média est l'argent que vous dépensez directement auprès des plateformes (Meta, Google, TikTok…). Il est facturé par la plateforme, pas par l'agence. Les honoraires rémunèrent le travail de l'agence : stratégie, création, pilotage, optimisation et reporting. Quand on compare des offres, il faut toujours séparer ces deux lignes.",
+      },
+      { type: "h2", text: "Les trois modèles de tarification" },
+      {
+        type: "ul",
+        items: [
+          "Le forfait fixe mensuel : un montant constant, quel que soit votre budget média. Simple à budgétiser, mais il doit être cohérent avec le temps réellement passé sur votre compte.",
+          "Le pourcentage du budget média : les honoraires évoluent avec vos dépenses publicitaires. L'agence est incitée à faire croître le budget, ce qui n'est pas toujours aligné avec votre rentabilité.",
+          "Le modèle mixte : un fixe réduit complété d'une part variable, parfois liée à des objectifs de performance. Il aligne les intérêts, à condition que les objectifs soient mesurables et définis à l'avance.",
+        ],
+      },
+      { type: "h2", text: "Ce qui fait varier le prix" },
+      {
+        type: "ul",
+        items: [
+          "Le nombre de plateformes pilotées (une seule ou plusieurs)",
+          "Le budget média géré et la complexité du compte (catalogue produits, plusieurs pays, plusieurs offres)",
+          "La production créative : visuels, vidéos, déclinaisons de formats",
+          "La landing page : reprise de l'existante ou création d'une page dédiée",
+          "Le niveau de suivi : fréquence des optimisations, reporting, réunions",
+          "La mise en place et l'audit du tracking",
+        ],
+      },
+      { type: "h2", text: "Les points à vérifier avant de signer" },
+      {
+        type: "ul",
+        items: [
+          "Que comprend exactement le tarif : création des visuels, landing page, reporting, appels de suivi ?",
+          "Y a-t-il des frais de mise en place ou de gestion en plus des honoraires mensuels ?",
+          "Quelle est la durée d'engagement et comment peut-on y mettre fin ?",
+          "Le compte publicitaire et le pixel vous appartiennent-ils ? Vous devez rester propriétaire de vos données et de votre historique.",
+          "Comment la performance est-elle mesurée et partagée : accès en lecture à vos comptes ou simple PDF mensuel ?",
+        ],
+      },
+      { type: "h2", text: "Quel budget média prévoir ?" },
+      {
+        type: "p",
+        text: "Les algorithmes ont besoin de données pour apprendre. Nous recommandons un minimum d'environ 1 000 € par mois et par plateforme pour obtenir des résultats exploitables. En dessous, les tests prennent trop de temps et les conclusions restent fragiles. Les honoraires doivent rester raisonnables au regard de ce budget : il n'a pas de sens de payer des honoraires supérieurs à l'argent que vous investissez en publicité.",
+      },
+      { type: "h2", text: "Comparer deux devis" },
+      {
+        type: "p",
+        text: "Ne comparez pas seulement le prix : comparez le périmètre, la transparence et la manière dont l'agence raisonne sur votre rentabilité. Une agence qui vous parle de marge, de coût d'acquisition cible et de ROAS d'équilibre (voir notre article sur le calcul du ROAS) travaille pour votre résultat, pas seulement pour votre budget.",
+      },
+      {
+        type: "p",
+        text: "Pour obtenir une estimation adaptée à votre situation, demandez un audit gratuit : nous analysons votre activité, votre budget et vos objectifs, puis nous vous présentons un plan et un cadre tarifaire clairs.",
+      },
+    ],
+  },
+  {
+    slug: "agence-ou-freelance-publicite-en-ligne",
+    title: "Agence ou freelance en publicité : comment choisir ?",
+    description:
+      "Freelance, agence ou expert indépendant : avantages, limites et questions à poser pour choisir qui pilotera vos campagnes Meta Ads et Google Ads.",
+    date: "2026-11-17",
+    readingMinutes: 5,
+    relatedServices: ["meta-ads", "google-ads", "landing-page-cro"],
+    content: [
+      {
+        type: "p",
+        text: "Confier ses campagnes publicitaires à un tiers est une décision structurante : de cette personne ou de cette équipe dépendent votre coût d'acquisition et, en pratique, votre croissance. Freelance ou agence ? Il n'existe pas de bonne réponse universelle, mais il existe des critères clairs pour décider.",
+      },
+      { type: "h2", text: "Le freelance : proximité et expertise ciblée" },
+      {
+        type: "ul",
+        items: [
+          "Avantages : un interlocuteur unique qui connaît votre compte en détail, une grande réactivité, des tarifs généralement plus lisibles.",
+          "Limites : la capacité est limitée à une personne (absence, surcharge), et les compétences couvrent rarement tous les besoins, notamment la création vidéo ou le développement de pages.",
+        ],
+      },
+      { type: "h2", text: "L'agence : une équipe et des process" },
+      {
+        type: "ul",
+        items: [
+          "Avantages : plusieurs profils complémentaires (média buying, création, tracking, développement), une continuité de service, des méthodes structurées.",
+          "Limites : un coût souvent plus élevé, et parfois un interlocuteur commercial différent de la personne qui travaille réellement sur votre compte.",
+        ],
+      },
+      { type: "h2", text: "Cinq critères pour décider" },
+      {
+        type: "ul",
+        items: [
+          "Votre budget média : en dessous de quelques milliers d'euros par mois, une structure lourde est rarement rentable.",
+          "L'étendue de vos besoins : uniquement du pilotage de campagnes, ou aussi créas, landing page et tracking ?",
+          "Votre niveau d'implication : souhaitez-vous un point direct avec la personne qui pilote ?",
+          "La spécialisation : l'interlocuteur maîtrise-t-il la plateforme qui compte pour vous et votre secteur ?",
+          "La transparence : accès à vos comptes, reporting clair, propriété des données.",
+        ],
+      },
+      { type: "h2", text: "Les questions à poser à n'importe quel prestataire" },
+      {
+        type: "ul",
+        items: [
+          "Qui va concrètement travailler sur mon compte, et à quelle fréquence ?",
+          "Comment mesurez-vous la performance, et sur quels indicateurs vous engagez-vous ?",
+          "Pouvez-vous me montrer des cas concrets et des résultats chiffrés sur des activités proches de la mienne ?",
+          "Les comptes publicitaires et le pixel seront-ils à mon nom ?",
+          "Quelles sont les conditions de sortie ?",
+        ],
+      },
+      { type: "h2", text: "Un modèle intermédiaire : l'expert indépendant" },
+      {
+        type: "p",
+        text: "Entre le freelance isolé et l'agence de grande taille, certains experts indépendants travaillent en direct avec le client tout en s'appuyant sur un réseau de spécialistes pour la création et le développement. C'est le modèle que nous avons choisi chez Acquiz Agency : un interlocuteur unique, certifié par les principales régies publicitaires, avec la capacité de livrer créas et landing pages.",
+      },
+      {
+        type: "p",
+        text: "Quel que soit votre choix, exigez de la transparence et un objectif de rentabilité clair. Si vous voulez comparer, un audit gratuit vous donne un avis concret sur vos comptes, sans engagement.",
+      },
+    ],
+  },
+  {
+    slug: "pixel-meta-api-conversions-tracking",
+    title: "Pixel Meta et API de conversions : un tracking fiable",
+    description:
+      "Pixel, API de conversions, déduplication et consentement : les bases d'un suivi fiable pour que Meta optimise vos campagnes sur de vraies conversions.",
+    date: "2026-11-17",
+    readingMinutes: 6,
+    relatedServices: ["meta-ads", "google-ads", "landing-page-cro"],
+    content: [
+      {
+        type: "p",
+        text: "Les algorithmes de Meta apprennent à partir des événements que vous leur envoyez : visites, leads, achats. Si ces données sont incomplètes ou fausses, l'optimisation se fait sur de mauvais signaux et votre coût d'acquisition grimpe. Le tracking n'est pas un détail technique : c'est la base de la performance.",
+      },
+      { type: "h2", text: "Le Pixel Meta : le suivi côté navigateur" },
+      {
+        type: "p",
+        text: "Le Pixel est un code installé sur votre site. Il envoie à Meta les actions réalisées par les visiteurs depuis leur navigateur. Son point faible : il dépend du navigateur. Bloqueurs de publicité, restrictions sur les cookies et refus de consentement peuvent empêcher une partie des événements de remonter.",
+      },
+      { type: "h2", text: "L'API de conversions : le suivi côté serveur" },
+      {
+        type: "p",
+        text: "L'API de conversions envoie les événements directement depuis votre serveur (ou un outil intermédiaire) vers Meta, sans passer par le navigateur du visiteur. Elle complète le Pixel et permet de récupérer des événements qui seraient autrement perdus. Meta recommande de combiner les deux.",
+      },
+      { type: "h2", text: "La déduplication : éviter de compter deux fois" },
+      {
+        type: "p",
+        text: "Quand le Pixel et l'API envoient le même événement, Meta doit comprendre qu'il s'agit d'une seule conversion. Pour cela, chaque événement doit porter le même nom et le même identifiant d'événement (event_id) des deux côtés. Sans déduplication, vos conversions sont gonflées et vos chiffres ne sont plus fiables.",
+      },
+      { type: "h2", text: "Le consentement et le RGPD" },
+      {
+        type: "p",
+        text: "En France, le suivi publicitaire nécessite le consentement de l'internaute. Votre bandeau de cookies doit être configuré pour que les balises Meta ne se déclenchent qu'après acceptation. Un suivi non conforme vous expose à un risque juridique, et un suivi trop restrictif prive vos campagnes de données : il faut trouver le bon réglage et le documenter.",
+      },
+      { type: "h2", text: "Les événements essentiels à suivre" },
+      {
+        type: "ul",
+        items: [
+          "Lead ou formulaire envoyé pour la génération de contacts",
+          "ViewContent, AddToCart, InitiateCheckout et Purchase pour l'e-commerce, avec la valeur et la devise de la commande",
+          "Contact ou clic sur le téléphone pour les activités qui reçoivent des appels",
+        ],
+      },
+      { type: "h2", text: "Comment vérifier que tout fonctionne" },
+      {
+        type: "ul",
+        items: [
+          "Utilisez l'outil Test des événements dans le Gestionnaire d'événements de Meta pour vérifier que chaque action déclenche le bon événement.",
+          "Contrôlez la qualité de correspondance des événements : plus vous transmettez de paramètres (e-mail, téléphone hachés), mieux Meta rattache l'événement à un utilisateur.",
+          "Vérifiez que les événements Pixel et serveur sont bien dédupliqués.",
+          "Comparez les conversions de Meta à celles de votre CRM ou de votre back-office : un écart important est un signal d'alerte.",
+        ],
+      },
+      { type: "h2", text: "Les erreurs fréquentes" },
+      {
+        type: "ul",
+        items: [
+          "Un événement Lead déclenché à chaque chargement de la page de remerciement, y compris les rechargements",
+          "Des événements d'achat sans valeur ni devise",
+          "Un double comptage faute de déduplication",
+          "Un bandeau de cookies qui bloque toutes les balises, ou aucune",
+        ],
+      },
+      {
+        type: "p",
+        text: "Avant d'augmenter votre budget, assurez-vous que votre tracking est solide. C'est la première chose que nous contrôlons dans l'audit gratuit : état du Pixel, de l'API de conversions et des événements, avec les corrections à prioriser.",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string) {
