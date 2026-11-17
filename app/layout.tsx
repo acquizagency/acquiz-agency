@@ -21,7 +21,7 @@ const GTM_ID = "GTM-MPMVHDMM";
 
 const TITLE = "Acquiz Agency — Agence d'Acquisition en Publicité en Ligne";
 const DESCRIPTION =
-  "Expert en Acquisition Digitale - Plus de 30 clients accompagnés. Confiez votre acquisition de leads / génération de ventes en ligne à un expert confirmé et certifié par les principales régies publicitaires.";
+  "Expert en acquisition digitale, plus de 30 clients accompagnés. Confiez vos leads et vos ventes en ligne à un expert certifié par les régies publicitaires.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

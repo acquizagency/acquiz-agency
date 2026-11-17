@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import FadeIn from "./FadeIn";
 import { LandingPageIcon, type IconComponent } from "./PlatformIcon";
 
 type Service = {
+  slug: string;
   platform: string;
   sub: string;
   desc: string;
@@ -16,18 +18,21 @@ type Service = {
 
 const services: Service[] = [
   {
+    slug: "meta-ads",
     platform: "Meta Ads",
     sub: "Facebook & Instagram",
     desc: "Campagnes de conversion, lead gen, retargeting. Structure professionnelle, créatives qui performent, optimisation continue.",
     logo: "/platform-logos/meta.png",
   },
   {
+    slug: "google-ads",
     platform: "Google Ads",
     sub: "SEA",
     desc: "Search, Shopping, PMax. Nous construisons des comptes qui capturent l'intention d'achat et protègent votre budget.",
     logo: "/platform-logos/google-ads.png",
   },
   {
+    slug: "tiktok-ads",
     platform: "TikTok Ads",
     sub: "Social Ads",
     desc: "Créas vidéos virales, hooks efficaces, ciblage précis. CPM parmi les plus bas du marché.",
@@ -35,6 +40,7 @@ const services: Service[] = [
     badgeClassName: "bg-black",
   },
   {
+    slug: "linkedin-ads",
     platform: "LinkedIn Ads",
     sub: "Social Ads",
     desc: "Sponsored Content, Lead Gen Forms. Idéal pour toucher les bons décideurs B2B avec un message impactant.",
@@ -42,6 +48,7 @@ const services: Service[] = [
     fullBleedLogo: true,
   },
   {
+    slug: "snap-ads",
     platform: "Snap Ads",
     sub: "Social Ads",
     desc: "Formats immersifs et créas vidéos natives, pour toucher une audience jeune et mobile. Coûts d'acquisition souvent très compétitifs.",
@@ -49,6 +56,7 @@ const services: Service[] = [
     badgeClassName: "bg-[#FFFC00]",
   },
   {
+    slug: "landing-page-cro",
     platform: "Landing Page",
     sub: "CRO",
     desc: "Nous concevons et développons des pages optimisées grâce à une nouvelle méthode unique pour transformer vos visiteurs en leads ou clients : message clair, un seul objectif, chargement rapide. Livraison en 72h.",
@@ -69,9 +77,12 @@ export default function Services() {
       </FadeIn>
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2">
-        {services.map(({ platform, sub, desc, logo, fullBleedLogo, badgeClassName, Icon }, i) => (
+        {services.map(({ slug, platform, sub, desc, logo, fullBleedLogo, badgeClassName, Icon }, i) => (
           <FadeIn key={platform} delay={i * 0.1}>
-            <div className="h-full rounded-2xl border border-charcoal/10 bg-white/50 p-8">
+            <Link
+              href={`/services/${slug}`}
+              className="group block h-full rounded-2xl border border-charcoal/10 bg-white/50 p-8 transition-colors hover:border-charcoal/30"
+            >
               <span
                 className={`flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl ${
                   badgeClassName ?? (logo ? (fullBleedLogo ? "" : "bg-white") : "bg-charcoal text-cream")
@@ -94,7 +105,11 @@ export default function Services() {
                 {sub && <span className="ml-2 font-body text-sm font-normal text-charcoal/50">{sub}</span>}
               </h3>
               <p className="mt-3 font-body text-charcoal/70">{desc}</p>
-            </div>
+              <span className="mt-5 inline-block font-body text-sm font-semibold text-charcoal">
+                En savoir plus{" "}
+                <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
           </FadeIn>
         ))}
       </div>
