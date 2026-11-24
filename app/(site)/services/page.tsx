@@ -8,7 +8,7 @@ import { services } from "../../lib/services";
 import { breadcrumbJsonLd, buildMetadata } from "../../lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nos services publicitaires : Meta, Google, TikTok, LinkedIn, Snap | Acquiz Agency",
+  title: "Services de publicité en ligne | Acquiz Agency",
   description:
     "Meta Ads, Google Ads, TikTok Ads, LinkedIn Ads, Snap Ads et landing pages : découvrez comment Acquiz Agency génère leads et ventes pour votre activité.",
   path: "/services",
@@ -51,6 +51,59 @@ export default function ServicesHub() {
           </li>
         ))}
       </ul>
+
+      <section className="mt-16 max-w-3xl">
+        <h2 className="font-display text-2xl font-semibold text-charcoal">
+          Une méthode commune à tous nos leviers
+        </h2>
+        <p className="mt-4 font-body leading-relaxed text-charcoal/75">
+          Quelle que soit la plateforme, nous suivons la même logique : on ne dépense pas un euro de plus
+          avant de savoir ce que rapporte le précédent.
+        </p>
+        <ul className="mt-5 space-y-4 font-body leading-relaxed text-charcoal/75">
+          <li>
+            <strong className="font-semibold text-charcoal">Un tracking fiable d&apos;abord.</strong> Sans
+            conversions correctement mesurées, les algorithmes optimisent sur de mauvais signaux. C&apos;est la
+            première chose que nous vérifions (voir{" "}
+            <Link href="/blog/pixel-meta-api-conversions-tracking" className="underline underline-offset-4 hover:text-charcoal">
+              notre guide sur le Pixel Meta et l&apos;API de conversions
+            </Link>
+            ).
+          </li>
+          <li>
+            <strong className="font-semibold text-charcoal">Un objectif de rentabilité chiffré.</strong> Nous
+            partons de votre marge pour fixer un coût d&apos;acquisition ou un ROAS cible réaliste (voir{" "}
+            <Link href="/blog/roas-calcul-objectif" className="underline underline-offset-4 hover:text-charcoal">
+              comment calculer et choisir son ROAS
+            </Link>
+            ).
+          </li>
+          <li>
+            <strong className="font-semibold text-charcoal">Une page qui convertit.</strong> Une bonne annonce
+            envoie du trafic, c&apos;est la landing page qui le transforme en contacts ou en ventes (voir{" "}
+            <Link href="/blog/landing-page-7-elements-conversion" className="underline underline-offset-4 hover:text-charcoal">
+              les 7 éléments d&apos;une landing page efficace
+            </Link>
+            ).
+          </li>
+          <li>
+            <strong className="font-semibold text-charcoal">Une optimisation continue.</strong> Tests de
+            créas, ajustement des audiences et des budgets, et un reporting clair pour que vous sachiez
+            toujours où va votre argent.
+          </li>
+        </ul>
+        <p className="mt-5 font-body leading-relaxed text-charcoal/75">
+          Pas sûr de la plateforme à privilégier ? Lisez notre comparatif{" "}
+          <Link href="/blog/meta-ads-ou-google-ads" className="underline underline-offset-4 hover:text-charcoal">
+            Meta Ads ou Google Ads
+          </Link>
+          , ou{" "}
+          <Link href="/audit-gratuit" className="underline underline-offset-4 hover:text-charcoal">
+            demandez un audit gratuit
+          </Link>
+          .
+        </p>
+      </section>
 
       <div className="mt-16">
         <CtaBand />

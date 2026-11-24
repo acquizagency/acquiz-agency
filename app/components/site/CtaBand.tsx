@@ -12,6 +12,12 @@ export default function CtaBand({
       <div>
         <p className="font-display text-xl font-semibold text-cream sm:text-2xl">{title}</p>
         <p className="mt-2 font-body text-sm text-cream/70">{text}</p>
+        <Link
+          href="/audit-gratuit"
+          className="mt-3 inline-block font-body text-sm text-cream underline underline-offset-4 hover:text-cream/80"
+        >
+          Voir ce que comprend l&apos;audit
+        </Link>
       </div>
       <Link
         href="/#contact"

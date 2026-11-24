@@ -290,6 +290,23 @@ export const posts: Post[] = [
         width: 1200,
         height: 480,
       },
+      { type: "h2", text: "Quels ordres de grandeur ?" },
+      {
+        type: "p",
+        text: "Les tarifs publiés varient fortement d'une source à l'autre. À titre indicatif, on retrouve fréquemment sur le marché français :",
+      },
+      {
+        type: "ul",
+        items: [
+          "Pour une agence : de l'ordre de 1 500 à 5 000 € par mois de gestion, parfois davantage pour des comptes complexes ou multi-plateformes.",
+          "Pour une facturation au pourcentage : généralement entre 10 et 20 % du budget média.",
+          "Pour un freelance : le plus souvent un tarif inférieur à celui d'une agence, sur un périmètre plus restreint.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Ces montants correspondent uniquement à la gestion : le budget média versé à Google ou à Meta s'y ajoute. Ce sont des repères issus de comparateurs d'agences et d'articles du secteur, pas la grille tarifaire d'Acquiz Agency : le coût réel dépend de votre périmètre, de votre budget et de vos objectifs.",
+      },
       { type: "h2", text: "Ce qui fait varier le prix" },
       {
         type: "ul",

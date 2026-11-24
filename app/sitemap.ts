@@ -3,7 +3,7 @@ import { posts } from "./lib/posts";
 import { services } from "./lib/services";
 import { absoluteUrl } from "./lib/site";
 
-const LAST_MODIFIED = new Date("2026-11-11");
+const LAST_MODIFIED = new Date("2026-11-24");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
+    { url: absoluteUrl("/audit-gratuit"), lastModified: LAST_MODIFIED, changeFrequency: "monthly", priority: 0.9 },
     { url: absoluteUrl("/blog"), lastModified: LAST_MODIFIED, changeFrequency: "weekly", priority: 0.6 },
     ...posts.map((p) => ({
       url: absoluteUrl(`/blog/${p.slug}`),

@@ -20,7 +20,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const p = getPost(params.slug);
   if (!p) return {};
   return buildMetadata({
-    title: `${p.title} | ${SITE_NAME}`,
+    // Google tronque les titres au-delà de ~60 caractères : on retire la marque si besoin.
+    title: `${p.title} | ${SITE_NAME}`.length <= 60 ? `${p.title} | ${SITE_NAME}` : p.title,
     description: p.description,
     path: `/blog/${p.slug}`,
     type: "article",

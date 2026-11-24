@@ -20,6 +20,9 @@ export default function Footer() {
           <Link href="/blog" className="hover:text-cream">
             Blog
           </Link>
+          <Link href="/audit-gratuit" className="hover:text-cream">
+            Audit gratuit
+          </Link>
         </nav>
       </div>
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 sm:flex-row">
