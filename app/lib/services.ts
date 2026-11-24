@@ -10,6 +10,7 @@ export type ServicePageData = {
   slug: string;
   name: string;
   shortDesc: string;
+  imageAlt: string;
   logo?: string;
   fullBleedLogo?: boolean;
   badgeClassName?: string;
@@ -26,6 +27,7 @@ export type ServicePageData = {
 export const services: ServicePageData[] = [
   {
     slug: "meta-ads",
+    imageAlt: "Acquiz Agency, agence Meta Ads : campagnes Facebook et Instagram pour générer des leads et des ventes",
     name: "Meta Ads",
     shortDesc:
       "Campagnes Facebook & Instagram orientées leads et ventes : structure professionnelle, créas qui performent, optimisation continue.",
@@ -81,6 +83,7 @@ export const services: ServicePageData[] = [
   },
   {
     slug: "google-ads",
+    imageAlt: "Acquiz Agency, agence Google Ads : campagnes Search, Shopping et Performance Max",
     name: "Google Ads",
     shortDesc:
       "Search, Shopping, Performance Max : des comptes qui capturent l'intention d'achat et protègent votre budget.",
@@ -139,6 +142,7 @@ export const services: ServicePageData[] = [
   },
   {
     slug: "tiktok-ads",
+    imageAlt: "Acquiz Agency, agence TikTok Ads : créas vidéo natives pour toucher une large audience",
     name: "TikTok Ads",
     shortDesc:
       "Créas vidéo natives, hooks efficaces et ciblage précis pour toucher une audience large sur TikTok.",
@@ -195,6 +199,7 @@ export const services: ServicePageData[] = [
   },
   {
     slug: "linkedin-ads",
+    imageAlt: "Acquiz Agency, agence LinkedIn Ads : campagnes B2B pour générer des leads qualifiés",
     name: "LinkedIn Ads",
     shortDesc:
       "Sponsored Content et Lead Gen Forms pour toucher les bons décideurs B2B avec un message impactant.",
@@ -250,6 +255,7 @@ export const services: ServicePageData[] = [
   },
   {
     slug: "snap-ads",
+    imageAlt: "Acquiz Agency, agence Snap Ads : formats immersifs pour toucher une audience jeune et mobile",
     name: "Snap Ads",
     shortDesc:
       "Formats immersifs et créas vidéo natives pour toucher une audience jeune et mobile.",
@@ -305,6 +311,7 @@ export const services: ServicePageData[] = [
   },
   {
     slug: "landing-page-cro",
+    imageAlt: "Acquiz Agency : conception de landing pages optimisées pour la conversion (CRO)",
     name: "Landing page & CRO",
     shortDesc:
       "Pages d'atterrissage conçues pour convertir : message clair, un seul objectif, chargement rapide.",

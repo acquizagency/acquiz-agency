@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -23,6 +24,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title: s.metaTitle,
     description: s.metaDescription,
     path: `/services/${s.slug}`,
+    image: { url: `/services/${s.slug}.png`, width: 1200, height: 630, alt: s.imageAlt },
   });
 }
 
@@ -46,6 +48,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     serviceType: s.name,
     description: s.metaDescription,
     url: absoluteUrl(path),
+    image: absoluteUrl(`/services/${s.slug}.png`),
     provider: { "@type": "ProfessionalService", name: SITE_NAME, url: absoluteUrl("/") },
     areaServed: { "@type": "Country", name: "France" },
   };
@@ -85,6 +88,15 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           Obtenir mon audit gratuit →
         </Link>
       </div>
+
+      <Image
+        src={`/services/${s.slug}.png`}
+        alt={s.imageAlt}
+        width={1200}
+        height={630}
+        sizes="(max-width: 896px) 100vw, 896px"
+        className="mt-10 h-auto w-full rounded-2xl border border-charcoal/10"
+      />
 
       <div className="mt-14 space-y-12">
         {s.blocks.map((b) => (

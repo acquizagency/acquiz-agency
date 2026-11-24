@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import JsonLd from "./components/site/JsonLd";
+import { faqs } from "./lib/faq";
 import { organizationJsonLd } from "./lib/seo";
 import Hero from "./components/Hero";
 import LogoBar from "./components/LogoBar";
@@ -21,6 +22,17 @@ export default function Home() {
   return (
     <main>
       <JsonLd data={organizationJsonLd} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }}
+      />
       <Hero />
       <LogoBar />
       <Problem />
