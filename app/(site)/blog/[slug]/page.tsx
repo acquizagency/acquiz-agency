@@ -41,6 +41,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     { name: p.title, path },
   ];
   const related = p.relatedServices.map((slug) => getService(slug)).filter(Boolean);
+  const relatedPosts = p.relatedPosts.map((slug) => getPost(slug)).filter(Boolean);
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -141,6 +142,21 @@ export default function PostPage({ params }: { params: { slug: string } }) {
       <div className="mt-14">
         <CtaBand />
       </div>
+
+      {relatedPosts.length > 0 && (
+        <aside className="mt-12">
+          <h2 className="font-display text-lg font-semibold text-charcoal">À lire aussi</h2>
+          <ul className="mt-3 space-y-2 font-body text-charcoal/75">
+            {relatedPosts.map((r) => (
+              <li key={r!.slug}>
+                <Link href={`/blog/${r!.slug}`} className="underline underline-offset-4 hover:text-charcoal">
+                  {r!.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      )}
 
       {related.length > 0 && (
         <aside className="mt-12">

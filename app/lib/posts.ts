@@ -20,6 +20,7 @@ export type Post = {
   readingMinutes: number;
   image: PostImage;
   relatedServices: string[];
+  relatedPosts: string[];
   content: PostBlock[];
 };
 
@@ -38,6 +39,7 @@ export const posts: Post[] = [
       height: 630,
     },
     relatedServices: ["meta-ads", "google-ads", "landing-page-cro"],
+    relatedPosts: ["budget-publicitaire-debuter-meta-google-ads", "publicites-facebook-ne-convertissent-pas"],
     content: [
       {
         type: "p",
@@ -131,6 +133,7 @@ export const posts: Post[] = [
       height: 630,
     },
     relatedServices: ["meta-ads", "google-ads"],
+    relatedPosts: ["budget-publicitaire-debuter-meta-google-ads", "cout-agence-publicite-en-ligne"],
     content: [
       {
         type: "p",
@@ -198,6 +201,7 @@ export const posts: Post[] = [
       height: 630,
     },
     relatedServices: ["landing-page-cro", "meta-ads"],
+    relatedPosts: ["landing-page-ou-site-web-publicite", "publicites-facebook-ne-convertissent-pas"],
     content: [
       {
         type: "p",
@@ -263,6 +267,7 @@ export const posts: Post[] = [
       height: 630,
     },
     relatedServices: ["meta-ads", "google-ads"],
+    relatedPosts: ["budget-publicitaire-debuter-meta-google-ads", "agence-ou-freelance-publicite-en-ligne"],
     content: [
       {
         type: "p",
@@ -360,6 +365,7 @@ export const posts: Post[] = [
       height: 630,
     },
     relatedServices: ["meta-ads", "google-ads", "landing-page-cro"],
+    relatedPosts: ["cout-agence-publicite-en-ligne", "roas-calcul-objectif"],
     content: [
       {
         type: "p",
@@ -428,6 +434,7 @@ export const posts: Post[] = [
       height: 630,
     },
     relatedServices: ["meta-ads", "google-ads", "landing-page-cro"],
+    relatedPosts: ["publicites-facebook-ne-convertissent-pas", "roas-calcul-objectif"],
     content: [
       {
         type: "p",
@@ -493,6 +500,246 @@ export const posts: Post[] = [
       {
         type: "p",
         text: "Avant d'augmenter votre budget, assurez-vous que votre tracking est solide. C'est la première chose que nous contrôlons dans l'audit gratuit : état du Pixel, de l'API de conversions et des événements, avec les corrections à prioriser.",
+      },
+    ],
+  },
+  {
+    slug: "publicites-facebook-ne-convertissent-pas",
+    title: "Publicités Facebook qui ne convertissent pas : 7 causes",
+    description:
+      "Tracking, landing page, offre, créas, budget : les 7 causes les plus fréquentes d'une pub Facebook ou Instagram qui ne convertit pas, et les corriger.",
+    date: "2026-11-24",
+    readingMinutes: 6,
+    image: {
+      src: "/blog/publicites-facebook-ne-convertissent-pas.png",
+      alt: "Visuel de l'article sur les 7 causes d'une publicité Facebook ou Instagram qui ne convertit pas",
+      width: 1200,
+      height: 630,
+    },
+    relatedServices: ["meta-ads", "landing-page-cro"],
+    relatedPosts: [
+      "pixel-meta-api-conversions-tracking",
+      "landing-page-7-elements-conversion",
+      "roas-calcul-objectif",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "Vous dépensez en publicité sur Facebook et Instagram, les clics arrivent, mais pas les contacts ni les ventes. Avant d'augmenter le budget ou de changer de plateforme, il faut identifier où se situe la fuite. Voici les sept causes les plus fréquentes, dans l'ordre où nous les vérifions.",
+      },
+      { type: "h2", text: "1. Un tracking défaillant" },
+      {
+        type: "p",
+        text: "Si le Pixel ou l'API de conversions ne remontent pas correctement vos conversions, Meta optimise à l'aveugle et vos rapports sont faussés : vous pouvez avoir de bons résultats sans le savoir, ou croire que tout va bien alors que non. Vérifiez que chaque événement important (lead, achat) se déclenche une seule fois, avec sa valeur.",
+      },
+      { type: "h2", text: "2. Une landing page qui ne tient pas la promesse de l'annonce" },
+      {
+        type: "p",
+        text: "L'annonce attire le clic, la page doit transformer. Un décalage de message, une page lente sur mobile, un formulaire trop long ou plusieurs appels à l'action concurrents font fuir les visiteurs. Le message, le visuel et l'offre doivent être reconnaissables d'une étape à l'autre.",
+      },
+      { type: "h2", text: "3. Une offre ou une proposition de valeur floue" },
+      {
+        type: "p",
+        text: "Une publicité efficace dit clairement ce que le visiteur obtient, pour qui, et pourquoi maintenant. Si votre annonce pourrait être celle d'un concurrent, elle ne se démarque pas. Testez des angles différents : le problème résolu, le résultat obtenu, la preuve, l'objection levée.",
+      },
+      { type: "h2", text: "4. Des créas peu efficaces ou usées" },
+      {
+        type: "p",
+        text: "Sur Meta, la créa est le premier levier de performance : c'est elle qui arrête le défilement du fil. Les mêmes visuels diffusés pendant des semaines finissent par lasser l'audience : la fréquence monte, et le coût par résultat aussi. Prévoyez un renouvellement régulier et testez plusieurs formats (vidéo, image, carrousel).",
+      },
+      { type: "h2", text: "5. Un budget dilué sur trop d'ensembles de publicités" },
+      {
+        type: "p",
+        text: "Multiplier les audiences et les campagnes disperse le budget : chaque ensemble reçoit trop peu de données pour apprendre. Avec un budget modeste, mieux vaut peu de campagnes bien alimentées que beaucoup de petites.",
+      },
+      { type: "h2", text: "6. Des modifications trop fréquentes" },
+      {
+        type: "p",
+        text: "Après un lancement ou un changement important, Meta passe par une phase d'apprentissage. D'après Meta, un ensemble de publicités en sort lorsqu'il obtient environ 50 événements d'optimisation en 7 jours. Modifier le budget, le ciblage ou les annonces à chaque consultation relance cette phase et empêche de tirer des conclusions.",
+      },
+      { type: "h2", text: "7. Un objectif d'optimisation inadapté" },
+      {
+        type: "p",
+        text: "Si la campagne est optimisée pour les clics ou les vues de page, Meta cherche des personnes qui cliquent, pas des personnes qui achètent ou laissent leurs coordonnées. Choisissez l'événement le plus proche de votre objectif commercial (lead, achat), tant que vous avez assez de volume pour que l'algorithme apprenne.",
+      },
+      { type: "h2", text: "Dans quel ordre diagnostiquer ?" },
+      {
+        type: "p",
+        text: "Commencez par ce qui est le plus fondamental et le moins coûteux à vérifier : le tracking, puis la cohérence entre l'annonce et la page, puis l'offre et les créas, et enfin la structure et les réglages. Corriger la structure d'un compte dont le tracking est faux ne sert à rien.",
+      },
+      {
+        type: "img",
+        src: "/blog/ordre-diagnostic-publicite.png",
+        alt: "Schéma en cinq étapes pour diagnostiquer une publicité qui ne convertit pas : 1 tracking, 2 cohérence entre l'annonce et la page, 3 offre, 4 créas, 5 structure et réglages.",
+        caption: "L'ordre dans lequel nous vérifions un compte qui ne convertit pas.",
+        width: 1200,
+        height: 360,
+      },
+      { type: "h2", text: "Et si le problème est ailleurs ?" },
+      {
+        type: "p",
+        text: "Parfois, le problème n'est pas la publicité mais l'économie de l'offre : un prix ou une marge qui ne permettent pas d'acquérir un client de façon rentable. Comparez votre coût d'acquisition à votre marge avant de conclure que « ça ne marche pas ».",
+      },
+      {
+        type: "p",
+        text: "Pas sûr de l'endroit où votre compte perd de l'argent ? Notre audit gratuit passe en revue ces sept points et vous indique les priorités.",
+      },
+    ],
+  },
+  {
+    slug: "budget-publicitaire-debuter-meta-google-ads",
+    title: "Quel budget pub pour débuter sur Meta et Google Ads ?",
+    description:
+      "Comment fixer son budget publicitaire de départ : partir du coût d'acquisition cible, calculer un budget de test et savoir quand l'augmenter.",
+    date: "2026-11-24",
+    readingMinutes: 5,
+    image: {
+      src: "/blog/budget-publicitaire-debuter-meta-google-ads.png",
+      alt: "Visuel de l'article sur le budget publicitaire de départ pour Meta Ads et Google Ads",
+      width: 1200,
+      height: 630,
+    },
+    relatedServices: ["meta-ads", "google-ads"],
+    relatedPosts: [
+      "roas-calcul-objectif",
+      "cout-agence-publicite-en-ligne",
+      "meta-ads-ou-google-ads",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "« Combien dois-je investir pour commencer ? » Il n'existe pas de somme magique : le bon budget est celui qui vous permet d'obtenir assez de résultats pour juger si une campagne est rentable. Voici une méthode pour le calculer plutôt que de le deviner.",
+      },
+      { type: "h2", text: "Partir de votre coût d'acquisition cible" },
+      {
+        type: "p",
+        text: "Commencez par déterminer ce que vous pouvez payer pour acquérir un lead ou un client tout en restant rentable. Ce coût d'acquisition maximum découle de votre marge : c'est la même logique que pour le ROAS d'équilibre.",
+      },
+      { type: "h2", text: "Une formule simple pour un budget de test" },
+      {
+        type: "p",
+        text: "Budget de test = coût d'acquisition cible × nombre de résultats nécessaires pour conclure.",
+      },
+      {
+        type: "img",
+        src: "/blog/formule-budget-test.png",
+        alt: "Schéma de la formule du budget de test : coût d'acquisition cible multiplié par le nombre de résultats nécessaires. Exemple : 40 € par lead pour 30 leads donnent 1 200 € de budget de test.",
+        caption: "Le budget de test, avec un exemple chiffré.",
+        width: 1200,
+        height: 430,
+      },
+      {
+        type: "p",
+        text: "Exemple : vous pouvez payer 40 € par lead et vous voulez en observer une trentaine avant de décider. Il faut alors prévoir environ 1 200 €, étalés sur plusieurs semaines. Le nombre de résultats nécessaire est un repère, pas une règle : plus il est élevé, plus la conclusion est fiable.",
+      },
+      { type: "h2", text: "Pourquoi un test trop court ne prouve rien" },
+      {
+        type: "p",
+        text: "Les plateformes ont besoin de données pour optimiser. Avec une somme très faible sur quelques jours, vous obtenez quelques clics et peut-être un résultat : trop peu pour distinguer un coup de chance d'une vraie performance. Un test trop court mène souvent à abandonner un levier qui aurait fonctionné, ou à en croire un qui ne fonctionne pas.",
+      },
+      { type: "h2", text: "Concentrer plutôt que disperser" },
+      {
+        type: "p",
+        text: "Avec un budget limité, lancez une seule plateforme, une ou deux campagnes et une offre claire. Notre repère habituel est d'au moins 1 000 € par mois et par plateforme pour disposer de données exploitables. Mieux vaut réussir sur un levier, puis étendre, que d'en lancer trois avec un budget insuffisant sur chacun.",
+      },
+      { type: "h2", text: "Budget quotidien ou budget total ?" },
+      {
+        type: "p",
+        text: "Meta propose un budget quotidien ou un budget sur la durée de la campagne. Le budget quotidien convient à une diffusion continue, le budget total à une opération limitée dans le temps, comme une promotion ou un événement.",
+      },
+      { type: "h2", text: "Quand augmenter le budget ?" },
+      {
+        type: "ul",
+        items: [
+          "Votre coût d'acquisition reste sous votre seuil de rentabilité depuis plusieurs semaines",
+          "Votre tracking est fiable et vérifié",
+          "Plusieurs créas performent, et pas une seule",
+          "Vous augmentez par paliers modérés (souvent autour de 20 %) plutôt que d'un seul coup, pour ne pas déstabiliser l'optimisation",
+        ],
+      },
+      { type: "h2", text: "Et le budget de l'agence ou du freelance ?" },
+      {
+        type: "p",
+        text: "Les honoraires de gestion s'ajoutent au budget média. Pour estimer l'ensemble de votre investissement, consultez notre article sur le coût d'une agence de publicité en ligne.",
+      },
+      {
+        type: "p",
+        text: "Pour un budget adapté à votre marge, à votre activité et à vos objectifs, demandez notre audit gratuit : nous vous indiquons par quelle plateforme commencer et avec quelle somme.",
+      },
+    ],
+  },
+  {
+    slug: "landing-page-ou-site-web-publicite",
+    title: "Landing page ou site web : où envoyer le trafic payant ?",
+    description:
+      "Landing page ou site web pour vos campagnes Google Ads et Meta Ads ? Les différences, ce que dit Google et quand envoyer le trafic vers votre site.",
+    date: "2026-11-24",
+    readingMinutes: 5,
+    image: {
+      src: "/blog/landing-page-ou-site-web-publicite.png",
+      alt: "Visuel de l'article comparant landing page et site web pour le trafic publicitaire",
+      width: 1200,
+      height: 630,
+    },
+    relatedServices: ["landing-page-cro", "google-ads", "meta-ads"],
+    relatedPosts: ["landing-page-7-elements-conversion", "meta-ads-ou-google-ads"],
+    content: [
+      {
+        type: "p",
+        text: "Votre site est soigné, mais vos campagnes Google Ads ou Meta Ads y envoient-elles les visiteurs au bon endroit ? Le choix de la page de destination influence directement le taux de conversion, donc le coût de chaque lead ou de chaque vente.",
+      },
+      { type: "h2", text: "Landing page et site web : la différence" },
+      {
+        type: "p",
+        text: "Un site web présente l'ensemble de votre activité, avec une navigation large : accueil, offres, à propos, blog. Une landing page est une page conçue pour obtenir une seule action (demander un devis, s'inscrire, acheter), qui reprend le message de l'annonce avec le moins de distractions possible.",
+      },
+      {
+        type: "img",
+        src: "/blog/landing-page-vs-site-web.png",
+        alt: "Comparatif entre un site web, qui présente toute l'activité avec une navigation large, et une landing page, qui vise une seule action avec un message identique à l'annonce.",
+        caption: "Un site web présente votre activité, une landing page vise une action.",
+        width: 1200,
+        height: 470,
+      },
+      { type: "h2", text: "Pourquoi une page dédiée est souvent plus efficace" },
+      {
+        type: "ul",
+        items: [
+          "Le message reprend celui de l'annonce : le visiteur sait tout de suite qu'il est au bon endroit.",
+          "Un seul objectif : pas de menu ni de liens qui détournent de l'action.",
+          "La page peut être adaptée à une audience ou à un mot-clé précis.",
+          "Vous mesurez plus facilement ce qui se passe sur la page et ce que vous pouvez améliorer.",
+        ],
+      },
+      { type: "h2", text: "Ce que dit Google" },
+      {
+        type: "p",
+        text: "Dans sa documentation, Google recommande de choisir une page de destination qui correspond étroitement au texte de l'annonce. L'expérience sur la page de destination fait aussi partie des facteurs du niveau de qualité d'un mot-clé, qui influence le coût et la position de vos annonces. Autre règle technique : le domaine de la page de destination doit correspondre à celui de l'URL affichée dans l'annonce.",
+      },
+      { type: "h2", text: "Quand envoyer le trafic vers votre site" },
+      {
+        type: "ul",
+        items: [
+          "Les campagnes sur votre nom de marque : les internautes vous connaissent déjà et cherchent votre site.",
+          "L'e-commerce : les pages produit et catégorie jouent le rôle de pages de destination, à condition d'être claires et rapides.",
+          "Les cas où la confiance se construit sur plusieurs pages (références, équipe, études de cas).",
+        ],
+      },
+      { type: "h2", text: "À vérifier avant d'envoyer du trafic" },
+      {
+        type: "ul",
+        items: [
+          "Le titre de la page reprend la promesse de l'annonce",
+          "Un seul appel à l'action principal",
+          "Un chargement rapide sur mobile",
+          "Un formulaire aussi court que possible",
+          "Des preuves vérifiables (avis, chiffres, références)",
+          "Le suivi des conversions en place",
+        ],
+      },
+      {
+        type: "p",
+        text: "Chez Acquiz Agency, nous concevons et développons des landing pages dédiées à vos campagnes, pensées pour convertir. Votre page actuelle est-elle à la hauteur ? Nous pouvons l'analyser gratuitement.",
       },
     ],
   },
