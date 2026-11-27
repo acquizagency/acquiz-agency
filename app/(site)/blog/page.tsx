@@ -30,7 +30,7 @@ export default function BlogIndex() {
         Des guides concrets pour piloter vos campagnes et améliorer votre rentabilité publicitaire.
       </p>
       <ul className="mt-10 space-y-5">
-        {posts.map((p) => (
+        {[...posts].sort((a, b) => b.date.localeCompare(a.date)).map((p) => (
           <li key={p.slug}>
             <Link
               href={`/blog/${p.slug}`}

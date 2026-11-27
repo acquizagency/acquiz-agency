@@ -133,7 +133,7 @@ export const posts: Post[] = [
       height: 630,
     },
     relatedServices: ["meta-ads", "google-ads"],
-    relatedPosts: ["budget-publicitaire-debuter-meta-google-ads", "cout-agence-publicite-en-ligne"],
+    relatedPosts: ["budget-publicitaire-debuter-meta-google-ads", "performance-max-google-ads", "cout-agence-publicite-en-ligne"],
     content: [
       {
         type: "p",
@@ -740,6 +740,328 @@ export const posts: Post[] = [
       {
         type: "p",
         text: "Chez Acquiz Agency, nous concevons et développons des landing pages dédiées à vos campagnes, pensées pour convertir. Votre page actuelle est-elle à la hauteur ? Nous pouvons l'analyser gratuitement.",
+      },
+    ],
+  },
+  {
+    slug: "performance-max-google-ads",
+    title: "Performance Max : fonctionnement, avantages et pièges",
+    description:
+      "Comment fonctionne Performance Max sur Google Ads, quand l'utiliser et quels pièges éviter : marque, URL finale, données de conversion et créas.",
+    date: "2026-11-27",
+    readingMinutes: 6,
+    image: {
+      src: "/blog/performance-max-google-ads.png",
+      alt: "Visuel de l'article sur le fonctionnement, les avantages et les pièges des campagnes Performance Max de Google Ads",
+      width: 1200,
+      height: 630,
+    },
+    relatedServices: ["google-ads", "landing-page-cro"],
+    relatedPosts: ["erreurs-google-ads-budget", "budget-publicitaire-debuter-meta-google-ads", "meta-ads-ou-google-ads"],
+    content: [
+      {
+        type: "p",
+        text: "Performance Max (souvent abrégée PMax) est un type de campagne Google Ads qui diffuse vos annonces sur l'ensemble des canaux de Google à partir d'une seule campagne. Puissante lorsqu'elle est bien alimentée, elle peut aussi consommer un budget sans que l'on sache vraiment où il part. Voici comment elle fonctionne et comment l'utiliser à bon escient.",
+      },
+      { type: "h2", text: "Comment fonctionne Performance Max" },
+      {
+        type: "p",
+        text: "Vous fixez un objectif de conversion et un budget, vous fournissez des éléments (titres, descriptions, images, vidéos, logo) regroupés en groupes d'assets, et Google décide où et à qui les diffuser : Réseau de Recherche, YouTube, Display, Discover, Gmail et Maps. L'algorithme combine vos éléments pour créer des annonces adaptées à chaque emplacement.",
+      },
+      {
+        type: "img",
+        src: "/blog/performance-max-canaux.png",
+        alt: "Schéma de Performance Max : une seule campagne, définie par un objectif, un budget et des éléments créatifs, diffuse sur la Recherche Google, YouTube, le Display, Discover, Gmail et Maps.",
+        caption: "Une seule campagne Performance Max diffuse sur tous les canaux de Google.",
+        width: 1200,
+        height: 420,
+      },
+      {
+        type: "p",
+        text: "Les signaux d'audience (vos listes de clients, vos visiteurs, des centres d'intérêt) servent de point de départ à l'algorithme. Ce sont des indications, pas des restrictions : Google peut diffuser au-delà de ces audiences s'il estime y trouver des conversions.",
+      },
+      { type: "h2", text: "Les avantages" },
+      {
+        type: "ul",
+        items: [
+          "Un accès à tout l'inventaire publicitaire de Google avec une seule campagne",
+          "Une optimisation automatique vers votre objectif de conversion",
+          "Pour l'e-commerce, l'exploitation de votre flux produits Merchant Center",
+          "Une diffusion sur des canaux que vous n'auriez peut-être pas testés, comme YouTube ou Discover",
+        ],
+      },
+      { type: "h2", text: "Les pièges à connaître" },
+      {
+        type: "ul",
+        items: [
+          "Moins de contrôle : vous choisissez moins finement où et à qui vos annonces sont diffusées.",
+          "La cannibalisation de votre marque : PMax peut capter des recherches sur votre nom, que vous auriez obtenues à moindre coût. Les exclusions de marque permettent de limiter ce phénomène.",
+          "L'extension de l'URL finale : selon vos réglages, Google peut envoyer le trafic vers d'autres pages de votre site que celle prévue. Vérifiez ce paramètre et excluez les pages non pertinentes.",
+          "La dépendance aux données de conversion : si votre suivi est faux ou trop pauvre, l'algorithme optimise sur de mauvais signaux.",
+          "Des éléments créatifs insuffisants : si vous ne fournissez pas de vidéo, Google peut en générer automatiquement à partir de vos images, avec un résultat souvent moins qualitatif.",
+        ],
+      },
+      { type: "h2", text: "Quand utiliser Performance Max ?" },
+      {
+        type: "p",
+        text: "Performance Max donne généralement ses meilleurs résultats lorsque :",
+      },
+      {
+        type: "ul",
+        items: [
+          "votre suivi des conversions est fiable et remonte des conversions régulièrement",
+          "vous disposez d'éléments créatifs variés, dont des vidéos",
+          "vous êtes en e-commerce avec un flux produits propre et à jour",
+          "vous avez déjà des campagnes Search qui fonctionnent et des données à exploiter",
+        ],
+      },
+      {
+        type: "p",
+        text: "Pour un premier lancement avec un budget limité, une campagne Search bien construite est souvent plus lisible et plus facile à piloter. Performance Max vient ensuite pour étendre la diffusion.",
+      },
+      { type: "h2", text: "Nos recommandations pour bien la piloter" },
+      {
+        type: "ul",
+        items: [
+          "Fournir des titres, descriptions, images et vidéos de qualité, dans tous les formats demandés",
+          "Utiliser vos propres données (listes de clients, visiteurs du site) comme signaux d'audience",
+          "Exclure votre marque si vous la couvrez déjà avec une campagne Search dédiée",
+          "Contrôler régulièrement les pages de destination et les informations sur les recherches disponibles dans les rapports",
+          "Laisser plusieurs semaines à la campagne avant de la juger, sans la modifier en permanence",
+        ],
+      },
+      {
+        type: "p",
+        text: "Vous utilisez déjà Performance Max et vous ne savez pas ce qu'elle rapporte vraiment ? Nous pouvons analyser votre compte gratuitement.",
+      },
+    ],
+  },
+  {
+    slug: "erreurs-google-ads-budget",
+    title: "Google Ads : 8 erreurs qui font exploser votre budget",
+    description:
+      "Suivi des conversions, réseau Display, ciblage géographique, termes de recherche : les 8 erreurs Google Ads les plus fréquentes et comment les corriger.",
+    date: "2026-11-27",
+    readingMinutes: 6,
+    image: {
+      src: "/blog/erreurs-google-ads-budget.png",
+      alt: "Visuel de l'article sur les 8 erreurs Google Ads qui font exploser le budget publicitaire",
+      width: 1200,
+      height: 630,
+    },
+    relatedServices: ["google-ads", "landing-page-cro"],
+    relatedPosts: ["performance-max-google-ads", "landing-page-ou-site-web-publicite", "budget-publicitaire-debuter-meta-google-ads"],
+    content: [
+      {
+        type: "p",
+        text: "Google Ads peut être le levier le plus rentable de votre acquisition, ou un gouffre. La différence tient souvent à quelques réglages et à quelques habitudes. Voici les huit erreurs que nous rencontrons le plus souvent lors de nos audits.",
+      },
+      { type: "h2", text: "1. Lancer sans suivi des conversions" },
+      {
+        type: "p",
+        text: "Sans conversions mesurées, impossible de savoir quels mots-clés rapportent, et les stratégies d'enchères automatiques n'ont rien sur quoi s'appuyer. Le suivi doit être en place et testé avant de dépenser le premier euro.",
+      },
+      { type: "h2", text: "2. Laisser le Réseau Display dans une campagne Search" },
+      {
+        type: "p",
+        text: "À la création d'une campagne sur le Réseau de Recherche, l'option qui inclut le Réseau Display est souvent cochée par défaut. Vos annonces apparaissent alors aussi sur des sites partenaires, avec un trafic généralement moins qualifié. Pour une campagne Search, désactivez cette option et gérez le Display dans une campagne distincte si besoin.",
+      },
+      { type: "h2", text: "3. Un ciblage géographique trop large" },
+      {
+        type: "p",
+        text: "Par défaut, Google peut diffuser vos annonces auprès des personnes situées dans votre zone, mais aussi de celles qui manifestent un intérêt pour cette zone. Pour une activité locale, l'option qui cible uniquement les personnes présentes ou se trouvant régulièrement dans la zone est souvent plus adaptée.",
+      },
+      { type: "h2", text: "4. Ne jamais regarder les termes de recherche" },
+      {
+        type: "p",
+        text: "Les mots-clés que vous choisissez ne sont pas les requêtes que tapent les internautes. Le rapport sur les termes de recherche montre les recherches réelles qui ont déclenché vos annonces. Sans mots-clés négatifs, vous payez pour des recherches sans rapport avec votre offre : emploi, gratuit, tutoriel, concurrents…",
+      },
+      { type: "h2", text: "5. Des requêtes larges sans garde-fous" },
+      {
+        type: "p",
+        text: "La requête large peut révéler de nouvelles opportunités, mais elle fonctionne mieux avec un suivi des conversions solide et des enchères automatiques. Sur un compte qui démarre sans données, elle peut disperser le budget sur des recherches peu pertinentes.",
+      },
+      { type: "h2", text: "6. Des annonces génériques et une seule page de destination" },
+      {
+        type: "p",
+        text: "Les annonces responsives sur le Réseau de Recherche acceptent jusqu'à 15 titres et 4 descriptions : utilisez-les pour tester des messages différents. Et envoyez chaque groupe d'annonces vers la page la plus pertinente, plutôt que tout vers la page d'accueil.",
+      },
+      { type: "h2", text: "7. Oublier les éléments d'annonce" },
+      {
+        type: "p",
+        text: "Liens annexes, accroches, extraits structurés, numéro d'appel : ces éléments (autrefois appelés extensions) agrandissent vos annonces et apportent des informations utiles. Ils sont gratuits à ajouter et peuvent améliorer votre taux de clic.",
+      },
+      { type: "h2", text: "8. Juger et modifier trop vite" },
+      {
+        type: "p",
+        text: "Changer les enchères, les budgets ou les annonces tous les deux jours empêche d'obtenir des données fiables, surtout avec des enchères automatiques qui ont besoin d'une période d'apprentissage. Fixez-vous des règles de décision et laissez le temps aux tests.",
+      },
+      { type: "h2", text: "Par où commencer ?" },
+      {
+        type: "p",
+        text: "Si vous ne deviez vérifier que trois points aujourd'hui : le suivi des conversions, les termes de recherche, et les paramètres de réseau et de ciblage géographique. Ce sont les fuites de budget les plus fréquentes et les plus simples à corriger.",
+      },
+      {
+        type: "p",
+        text: "Vous voulez savoir où votre compte perd de l'argent ? Notre audit gratuit passe en revue ces points et vous donne les corrections à prioriser.",
+      },
+    ],
+  },
+  {
+    slug: "tiktok-ads-premiere-campagne",
+    title: "TikTok Ads : comment réussir sa première campagne",
+    description:
+      "Suivi, objectif, créas natives, Spark Ads, ciblage : les étapes pour lancer une première campagne TikTok Ads rentable et les erreurs à éviter.",
+    date: "2026-11-27",
+    readingMinutes: 5,
+    image: {
+      src: "/blog/tiktok-ads-premiere-campagne.png",
+      alt: "Visuel de l'article sur les étapes pour réussir sa première campagne TikTok Ads",
+      width: 1200,
+      height: 630,
+    },
+    relatedServices: ["tiktok-ads", "snap-ads"],
+    relatedPosts: ["budget-publicitaire-debuter-meta-google-ads", "publicites-facebook-ne-convertissent-pas", "landing-page-7-elements-conversion"],
+    content: [
+      {
+        type: "p",
+        text: "TikTok n'est plus seulement le réseau des adolescents : c'est une plateforme publicitaire à part entière, capable de générer des ventes et des leads, à condition d'en respecter les codes. Voici les étapes pour lancer une première campagne dans de bonnes conditions.",
+      },
+      { type: "h2", text: "TikTok Ads est-il fait pour vous ?" },
+      {
+        type: "p",
+        text: "TikTok fonctionne particulièrement bien pour les produits visuels, les offres grand public, l'e-commerce et les marques capables de produire régulièrement des vidéos. Si votre offre se démontre en quelques secondes, c'est un bon signe.",
+      },
+      { type: "h2", text: "1. Installer le suivi avant tout" },
+      {
+        type: "p",
+        text: "Comme sur Meta, installez le Pixel TikTok et, idéalement, l'API Événements, le suivi côté serveur de TikTok. Vérifiez que les événements clés, comme l'achat ou le lead, remontent correctement avant de lancer la moindre campagne.",
+      },
+      { type: "h2", text: "2. Choisir le bon objectif" },
+      {
+        type: "p",
+        text: "Choisissez l'objectif qui correspond à votre résultat commercial (ventes, leads) plutôt qu'un objectif de trafic ou de vues, qui attirera surtout des personnes qui regardent ou cliquent sans acheter.",
+      },
+      { type: "h2", text: "3. Penser la créa comme un contenu TikTok" },
+      {
+        type: "p",
+        text: "Sur TikTok, une publicité qui ressemble à une publicité est vite ignorée. Les vidéos verticales tournées simplement, face caméra ou montrant le produit en situation, fonctionnent souvent mieux que des spots très produits.",
+      },
+      {
+        type: "img",
+        src: "/blog/structure-video-tiktok-ads.png",
+        alt: "Schéma de la structure d'une vidéo TikTok Ads en quatre temps : une accroche dans les premières secondes, le problème de la cible, la solution montrée en action avec une preuve, puis un appel à l'action.",
+        caption: "Accroche, problème, solution, appel à l'action : une structure simple et efficace.",
+        width: 1200,
+        height: 360,
+      },
+      {
+        type: "p",
+        text: "Les premières secondes sont décisives : elles doivent donner une raison de rester. Montrez ensuite le problème, la solution en action, et terminez par un appel à l'action clair.",
+      },
+      { type: "h2", text: "4. Tester plusieurs vidéos dès le départ" },
+      {
+        type: "p",
+        text: "Lancez plusieurs créas avec des accroches différentes plutôt qu'une seule vidéo. L'algorithme identifiera celles qui retiennent l'attention. Sur TikTok, les créas s'usent vite : prévoyez de les renouveler régulièrement.",
+      },
+      { type: "h2", text: "5. Utiliser les Spark Ads" },
+      {
+        type: "p",
+        text: "Les Spark Ads permettent de sponsoriser des publications organiques, les vôtres ou celles de créateurs avec leur accord. Elles conservent l'apparence d'un vrai contenu TikTok, avec le compte, les commentaires et les mentions J'aime.",
+      },
+      { type: "h2", text: "6. Laisser de la place à l'algorithme" },
+      {
+        type: "p",
+        text: "Un ciblage trop restreint limite la capacité de TikTok à trouver vos acheteurs. Commencez souvent large, avec une bonne créa et un objectif de conversion, puis affinez selon les résultats. Vérifiez aussi les budgets minimums imposés par la plateforme au moment de créer votre campagne.",
+      },
+      { type: "h2", text: "Les erreurs fréquentes" },
+      {
+        type: "ul",
+        items: [
+          "Recycler une publicité Facebook ou un spot TV sans l'adapter au format et aux codes de TikTok",
+          "Juger une campagne après deux jours",
+          "Une seule créa pour toute la campagne",
+          "Une landing page lente ou mal adaptée au mobile, alors que la quasi-totalité du trafic vient du smartphone",
+        ],
+      },
+      {
+        type: "p",
+        text: "Vous voulez tester TikTok Ads sans partir de zéro ? Demandez notre audit gratuit : nous vous indiquons si la plateforme est adaptée à votre offre et comment démarrer.",
+      },
+    ],
+  },
+  {
+    slug: "linkedin-ads-b2b-guide",
+    title: "LinkedIn Ads en B2B : formats, ciblage et erreurs",
+    description:
+      "Formats, ciblage, stratégie en plusieurs étapes et suivi : le guide pour générer des leads B2B avec LinkedIn Ads et éviter les erreurs coûteuses.",
+    date: "2026-11-27",
+    readingMinutes: 6,
+    image: {
+      src: "/blog/linkedin-ads-b2b-guide.png",
+      alt: "Visuel de l'article sur LinkedIn Ads en B2B : formats publicitaires, ciblage et erreurs à éviter",
+      width: 1200,
+      height: 630,
+    },
+    relatedServices: ["linkedin-ads", "landing-page-cro"],
+    relatedPosts: ["landing-page-ou-site-web-publicite", "budget-publicitaire-debuter-meta-google-ads", "cout-agence-publicite-en-ligne"],
+    content: [
+      {
+        type: "p",
+        text: "LinkedIn est la seule grande plateforme publicitaire qui permet de cibler précisément selon le poste, l'entreprise ou le secteur. C'est un atout majeur en B2B, mais les clics y coûtent généralement plus cher qu'ailleurs : la rentabilité dépend de la valeur de vos clients et de la façon dont vous transformez vos leads.",
+      },
+      { type: "h2", text: "Les principaux formats" },
+      {
+        type: "ul",
+        items: [
+          "Sponsored Content : vos publications diffusées dans le fil d'actualité, en image, vidéo, carrousel ou document.",
+          "Sponsored Messaging : des messages envoyés dans la messagerie LinkedIn.",
+          "Lead Gen Forms : des formulaires natifs préremplis avec les informations du profil, sans quitter LinkedIn.",
+          "Text Ads et Dynamic Ads : des formats plus discrets, affichés en marge du fil sur ordinateur.",
+        ],
+      },
+      { type: "h2", text: "Un ciblage pensé pour le B2B" },
+      {
+        type: "p",
+        text: "Vous pouvez cibler par intitulé de poste, fonction, niveau hiérarchique, secteur ou taille d'entreprise, et même importer une liste d'entreprises ou de contacts. Cette précision est la grande force de LinkedIn. Le piège : une audience trop étroite coûte cher et se sature vite.",
+      },
+      { type: "h2", text: "Une stratégie en plusieurs étapes" },
+      {
+        type: "p",
+        text: "En B2B, peu de personnes demandent une démonstration après avoir vu une seule publicité. Une approche efficace consiste à proposer d'abord un contenu utile (guide, étude, webinar), puis à recibler les personnes qui s'y sont intéressées avec une offre plus engageante.",
+      },
+      {
+        type: "img",
+        src: "/blog/linkedin-ads-strategie-b2b.png",
+        alt: "Schéma d'une stratégie LinkedIn Ads B2B en trois étapes : un contenu utile comme un guide ou un webinar, le reciblage des personnes engagées, puis une offre de démo, d'audit ou de rendez-vous, avec un suivi des leads jusqu'aux clients dans le CRM.",
+        caption: "Contenu utile, reciblage, puis offre : la progression typique d'une campagne B2B.",
+        width: 1200,
+        height: 420,
+      },
+      { type: "h2", text: "Les erreurs à éviter" },
+      {
+        type: "ul",
+        items: [
+          "Pousser directement une demande de démo à une audience qui ne vous connaît pas",
+          "Une audience trop étroite ou, à l'inverse, trop vague",
+          "Laisser activées, sans les vérifier, les options d'extension d'audience ou de diffusion en dehors de LinkedIn",
+          "Tarder à recontacter les leads issus des formulaires",
+          "Juger uniquement sur le coût par lead, sans suivre la qualité des leads ni leur transformation en clients",
+        ],
+      },
+      { type: "h2", text: "Suivre ce qui compte vraiment" },
+      {
+        type: "p",
+        text: "Installez l'Insight Tag de LinkedIn, et si possible l'API de conversions de LinkedIn, pour mesurer les conversions sur votre site. Mais en B2B, le vrai indicateur se situe plus loin : combien de leads deviennent des rendez-vous, puis des clients. Reliez vos campagnes à votre CRM dès que possible.",
+      },
+      { type: "h2", text: "LinkedIn Ads est-il rentable ?" },
+      {
+        type: "p",
+        text: "Oui, lorsque la valeur d'un client est élevée (services B2B, logiciels, prestations à forte valeur) et que vos équipes transforment efficacement les leads. Pour des paniers faibles, d'autres plateformes sont souvent plus adaptées.",
+      },
+      {
+        type: "p",
+        text: "Vous visez des décideurs B2B ? Notre audit gratuit vous aide à déterminer si LinkedIn Ads est le bon levier pour votre offre et comment le structurer.",
       },
     ],
   },
